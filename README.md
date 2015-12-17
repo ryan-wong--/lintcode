@@ -1,0 +1,1 @@
+# My code for the www.lintcode.com OJ system, a coding training platform for job seekers.
