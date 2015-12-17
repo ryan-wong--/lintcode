@@ -31,12 +31,9 @@ public class Solution {
             else 
                 end = mid;
         }
-        if(num_pieces(L, end)>=k)
-            return end;
-        else if(num_pieces(L, start)>=k)
+        if(num_pieces(L, start)>=k)
             return start;
-        else
-            return 0;
+        return 0;
     }
     
     /** 
