@@ -24,7 +24,7 @@ public class Solution {
         //1.root入栈
         //2.栈顶出栈并加入队列
         //3.出栈元素的右儿子、左儿子依次入栈，若栈不空，回到2.
-        //4.返回该队列
+        //4.栈空之后返回该队列
         nodes_.push(root);
         while(!nodes_.empty()){
             TreeNode temp = nodes_.pop();
