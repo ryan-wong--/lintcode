@@ -17,7 +17,8 @@ public class Solution {
      */
    
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {
-        //如果A、B都不在root下，则返回null
+        //若A、B都不在root下，则返回null；若A、B有且仅有一个在root下，返回A或B；
+        //若都在root下，返回root
         // write your code here
         if(root==null || root==A || root==B){
             return root;
