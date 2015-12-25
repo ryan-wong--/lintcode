@@ -2,6 +2,22 @@ public class Solution {
     /**
      * @param triangle: a list of lists of integers.
      * @return: An integer, minimum path sum.
+     * 给定一个数字三角形，找到从顶部到底部的最小路径和。每一步可以移动到下面一行的相邻数字上。
+     * 比如，给出下列数字三角形：
+
+        [
+
+             [2],
+
+            [3,4],
+
+           [6,5,7],
+
+          [4,1,8,3]
+
+        ]
+
+        从顶到底部的最小路径和为11 ( 2 + 3 + 5 + 1 = 11)。
      */
     public int minimumTotal(int[][] triangle) {
         // write your code here

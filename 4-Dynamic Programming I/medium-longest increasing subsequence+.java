@@ -2,6 +2,9 @@ public class Solution {
     /**
      * @param nums: The integer array
      * @return: The length of LIS (longest increasing subsequence)
+     * 样例
+     * 给出[5,4,1,2,3]，这个LIS是[1,2,3]，返回 3
+     * 给出[4,2,4,5,3,7]，这个LIS是[4,4,5,7]，返回 4
      */
     public int longestIncreasingSubsequence(int[] nums) {
         // write your code here

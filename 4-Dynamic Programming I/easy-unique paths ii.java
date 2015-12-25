@@ -2,6 +2,7 @@ public class Solution {
     /**
      * @param obstacleGrid: A list of lists of integers
      * @return: An integer
+     * 题干同unique path i，但网格中有障碍物，障碍物以0表示，通路以1表示
      */
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         // write your code here

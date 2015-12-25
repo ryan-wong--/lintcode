@@ -2,6 +2,10 @@ public class Solution {
     /**
      * @param n, m: positive integer (1 <= n ,m <= 100)
      * @return an integer
+     * 有一个机器人的位于一个M×N个网格左上角（下图中标记为'Start'）。
+
+     * 机器人每一时刻只能向下或者向右移动一步。机器人试图达到网格的右下角。
+     * 问有多少条不同的路径？
      */
     public int uniquePaths(int m, int n) {
         // write your code here 
