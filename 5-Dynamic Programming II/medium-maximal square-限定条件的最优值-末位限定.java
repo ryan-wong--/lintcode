@@ -32,7 +32,11 @@ public class Solution {
         	    //f[i][j] = 1+min{f[i-1][j], f[i][j-1], f[i][j]}
         		if(matrix[i][j]==1){
 	        		f[i][j] = Math.min(f[i-1][j], f[i][j-1]);
-	        		f[i][j] = Math.min(f[i][j], f[i-1][j-1]);
+	        		//加剪枝，因为f[i-1][j-1] = max{f[i-1][j]-1, f[i][j-1]-1}
+	        		//当仅当f[i-1][j]==f[i][j-1]时需要讨论f[i-1][j-1]
+	        		if(f[i-1][j]==f[i][j-1]){
+	        		    f[i][j] = Math.min(f[i][j], f[i-1][j-1]);
+	        		}
 	        		f[i][j] += 1;
         		}
         	}

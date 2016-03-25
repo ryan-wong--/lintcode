@@ -17,6 +17,7 @@ public class Solution {
         for(int i=1; i<=val; i++){
             f[0][i] = Math.abs(A.get(0)-i);
         }
+        //容易证明，若A[]前i个元素调整代价最小时，那么前i-1个元素调整代价也是最小的
         //递推式f[i][j] = min(k){f[i-1][k] + |A(i)-j|}, j-target<=k<=j+target.
         for(int i=1; i<n; i++){
             for(int j=1; j<=val; j++){

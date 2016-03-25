@@ -30,7 +30,7 @@ public class Solution {
                     f[i][j] = min_(f[i-1][j]+1, f[i][j-1]+1, f[i-1][j-1]+1);
                 }
                 else{
-                    f[i][j] = min_(f[i-1][j]+1, f[i][j-1]+1, f[i-1][j-1]);
+                    f[i][j] = f[i-1][j-1];
                 }
             }
         }
